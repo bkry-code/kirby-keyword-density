@@ -1,0 +1,75 @@
+[data-field="density"] table {
+	background: #fff;
+	border-collapse: collapse;
+	width: 100%;
+	border: 2px solid #ddd;
+	box-sizing: border-box;
+}
+
+[data-field="density"] td,
+[data-field="density"] th {
+	border: 1px solid #ddd;
+	padding: .5em;
+	text-align: left;
+}
+
+[data-field="density"] .all-words,
+[data-field="density"] .less-words {
+	background: #fff;
+	border: 2px solid #ddd;
+	border-top: none;
+	padding: .5em;
+	text-align: center;
+	box-sizing: border-box;
+	cursor: pointer;
+	font-weight: bold;
+	display: none;
+	margin-top: -1px;
+}
+
+[data-field="density"] .show {
+	display: block;
+}
+
+[data-field="density"] .word {
+	word-break: break-word;
+}
+
+[data-field="density"] th:last-child,
+[data-field="density"] td:last-child {
+	width: 2.5em;
+	border-left: 2px solid #fff;
+}
+
+[data-field="density"] .active .symbol:before {
+	font-family: FontAwesome;
+	content: "\f00c";
+	color: #8dae28;
+	text-align: center;
+	display: block;
+}
+
+[data-field="density"] .density-buttons {
+	display: none;
+}
+
+[data-field="density"][data-slice="true"] .density-buttons {
+	display: block;
+}
+
+[data-field="density"] .missing .inside div {
+	display: inline-block;
+	background: #fff;
+	color: #000;
+	padding: 0.25em 0.5em;
+	border-radius: 3px;
+	margin-left: 5px;
+	margin-bottom: 5px;
+}
+
+[data-field="density"] .missing .inside {
+	background: #b3000a;
+	padding: .5em 1em;
+	color: #fff;
+	margin-bottom: -5px;
+}
